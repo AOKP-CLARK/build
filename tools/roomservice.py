@@ -133,6 +133,9 @@ def add_to_local_manifest(path, name, remote, branch=None):
     if (remote == "aokp"):
         if (branch == None):
             branch = "mm"
+    if (remote == "AICP"):
+        if (branch == None):
+            branch = "mm6.0"
         if not (name.find("AOKP/") == 0):
             name = "AOKP/" + name
 
